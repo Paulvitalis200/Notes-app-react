@@ -38,7 +38,7 @@ function App() {
     toggleModal();
   };
 
-  const handleChange = (event: any) => {
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setNote(event.target.value);
   };
 
