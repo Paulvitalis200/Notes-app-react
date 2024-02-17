@@ -35,8 +35,6 @@ function App() {
       },
     ]);
 
-    setNote("");
-    setShowError(false);
     toggleModal();
   };
 
@@ -44,7 +42,13 @@ function App() {
     setNote(event.target.value);
   };
 
+  const resetForm = () => {
+    setNote("");
+    setShowError(false);
+  };
+
   const toggleModal = () => {
+    resetForm();
     setShowModal(!showModal);
   };
 
