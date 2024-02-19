@@ -62,7 +62,7 @@ function App() {
               onChange={handleChange}
               value={note}
             ></textarea>
-            {showError && (
+            {showError && note.trim().length < 10 && (
               <p className="error">Minimum characters allowed is 10</p>
             )}
             <div className="buttons">
